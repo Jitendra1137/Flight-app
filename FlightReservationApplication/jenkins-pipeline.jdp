@@ -2,29 +2,23 @@ pipeline {
     agent any 
     stages {
         stage('Pull'){
-            steps{
+            steps {
                 echo 'PULL'
             }
         }
-    }
-    stages {
         stage('BUILD'){
-            steps{
-                echo 'PULL'
+            steps {
+                echo 'BUILD'
             }
         }
-    }
-    stages {
         stage('TEST'){
-            steps{
-                echo 'PULL'
+            steps {
+                echo 'TEST'
             }
         }
-    }
-    stages {
         stage('DEPLOY'){
-            steps{
-                echo 'PULL'
+            steps {
+                echo 'DEPLOY'
             }
         }
     }
